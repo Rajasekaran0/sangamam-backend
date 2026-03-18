@@ -1,5 +1,12 @@
+require('dotenv').config();
+
+const port = process.env.PORT || 5000;
+const dbUri = process.env.MONGODB_URI;
+
 const dns = require('dns');
 dns.setServers(['8.8.8.8', '8.8.4.4']);
+
+
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
